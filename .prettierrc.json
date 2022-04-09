@@ -1,0 +1,21 @@
+{
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "arrowParens": "avoid",
+  "importOrder": [
+    "^react$",
+    "^react-native$",
+    "^react-",
+    "^@react-navigation/(.*)$",
+    "^@react-native-community/(.*)$",
+    "^@(.*)/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true
+}
