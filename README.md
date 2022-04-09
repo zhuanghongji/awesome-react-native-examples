@@ -1,16 +1,27 @@
-# awesome-react-native-examples 
+<br/>
+<br/>
+<br/>
 
-Collect and rewrite React Native libraries examples in one app.
+<p align="center"><img alt="awesome" src="logo.png" width="128" /></p><br/>
+<p align="center" style="color: #D6C3FF">awesome-react-native-examples</p><br/><br/>
+
+## Intro
+
+Collect and rewrite React Native libraries examples in one app
 
 - 🙂 Learn by examples
 - 😋 Excellent by examples
 - 😘 Creatively by examples
+
+<br/>
 
 ## Tips 
 
 - Download the apk of `ARNE` app on your Andoird device in `Release`, so you can explore the usage of lib easily. It save your time of navigating lib-repo to download and build the source code.
 - If you want to make this repo as a playground, just clone and run-android or run-ios as what you do before. There is no difference between `ARNE app-screen-structure` app and `src source-code-structure`, so you can position the app screen and souce code easily.
 - In the rode map below, 🕖 mark it's planning to do, ⏩ mark it's processing, 🆗 mark it's done but will be optimized with time flies.
+
+<br/>
 
 ## Roadmap
 
@@ -19,6 +30,8 @@ Collect and rewrite React Native libraries examples in one app.
 - 🕖 [react-navigation](https://github.com/react-navigation/react-navigation)
 - 🕖 [react-native-reanimated](https://github.com/software-mansion/react-native-reanimated)
 - 🕖 [react-native-gesture-handler](https://github.com/software-mansion/react-native-gesture-handler)
+- 🕖 [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context)
+- 🕖 [react-native-skia](https://github.com/shopify/react-native-skia)
 - 🕖 [react-native-camera](https://github.com/react-native-camera/react-native-camera)
 - 🕖 [react-native-webview](https://github.com/react-native-webview/react-native-webview)
 - 🕖 [react-native-vision-camera](https://github.com/mrousavy/react-native-vision-camera)
@@ -27,6 +40,8 @@ Collect and rewrite React Native libraries examples in one app.
 - 🕖 [react-native-video](https://github.com/react-native-video/react-native-video)
 - 🕖 [react-native-snap-carousel](https://github.com/meliorence/react-native-snap-carousel)
 - 🕖 [react-native-svg](https://github.com/react-native-svg/react-native-svg)
+- 🕖 [react-native-tab-view](https://github.com/satya164/react-native-tab-view)
+- 🕖 [react-native-pager-view](https://github.com/callstack/react-native-pager-view)
 - 🕖 [react-native-device-info](https://github.com/react-native-device-info/react-native-device-info)
 - 🕖 [react-native-animatable](https://github.com/oblador/react-native-animatable)
 - 🕖 [react-native-blur](https://github.com/Kureev/react-native-blur)
