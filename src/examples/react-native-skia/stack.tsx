@@ -4,6 +4,7 @@ import { ReactNativeSkiaStackParamList } from '../../common'
 import { CanvasScreen } from './Canvas'
 import { HelloWorldScreen } from './HelloWorld'
 import { HelloWorldImperativeAPIScreen } from './HelloWorldImperativeAPI'
+import { PaintScreen } from './Paint'
 import { ReactNativeSkiaHomeScreen } from './home'
 
 const Stack = createNativeStackNavigator()
@@ -29,6 +30,10 @@ const CONFIGS: Config[] = [
   {
     name: 'Canvas',
     component: CanvasScreen,
+  },
+  {
+    name: 'Paint',
+    component: PaintScreen,
   },
 ]
 

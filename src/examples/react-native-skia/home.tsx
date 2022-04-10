@@ -13,7 +13,12 @@ type ScreenProps = NativeStackScreenProps<
   'react-native-skia'
 >
 
-const NAMES: RouteName[] = ['HelloWorld', 'HelloWorldImperativeAPI', 'Canvas']
+const NAMES: RouteName[] = [
+  'HelloWorld',
+  'HelloWorldImperativeAPI',
+  'Canvas',
+  'Paint',
+]
 
 export const ReactNativeSkiaHomeScreen = ({
   navigation,

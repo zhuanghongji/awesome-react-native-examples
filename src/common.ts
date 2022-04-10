@@ -22,4 +22,5 @@ export type ReactNativeSkiaStackParamList = {
   HelloWorld: undefined
   HelloWorldImperativeAPI: undefined
   Canvas: undefined
+  Paint: undefined
 }
