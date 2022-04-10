@@ -15,10 +15,7 @@ type ScreenProps = NativeStackScreenProps<
 
 const NAMES: RouteName[] = ['AccessibilityInfo']
 
-export const ReactNativeApisHomeScreen = ({
-  navigation,
-  route,
-}: ScreenProps) => {
+export const HomeScreen = ({ navigation, route }: ScreenProps) => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="white" barStyle="dark-content" />

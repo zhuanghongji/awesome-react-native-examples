@@ -25,7 +25,7 @@ const NAMES: RouteName[] = [
   'react-native-skia ',
 ]
 
-export const HomeScreen = ({ navigation, route }: ScreenProps) => {
+export const MainScreen = ({ navigation, route }: ScreenProps) => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="white" barStyle="dark-content" />

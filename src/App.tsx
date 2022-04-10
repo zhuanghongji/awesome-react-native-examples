@@ -14,7 +14,7 @@ import { RootStackParamList } from './common'
 import { ReactNativeApisStack } from './examples/react-native-apis/stack'
 import { ReactNativeComponentsStack } from './examples/react-native-components/stack'
 import { ReactNativeSkiaStack } from './examples/react-native-skia/stack'
-import { HomeScreen } from './home'
+import { MainScreen } from './main'
 
 const Stack = createNativeStackNavigator()
 
@@ -26,7 +26,7 @@ type Config = {
 const CONFIGS: Config[] = [
   {
     name: 'Awesome React Native Examples',
-    component: HomeScreen,
+    component: MainScreen,
   },
   {
     name: 'React Native Apis ',

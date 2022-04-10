@@ -1,31 +1,13 @@
-import React, { ComponentType } from 'react'
+import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { ReactNativeComponentsStackParamList } from '../../common'
-import { ActivityIndicatorScreen } from './ActivityIndicator'
-import { ReactNativeComponentsHomeScreen } from './home'
+import { SCREEN_CONFIGS } from './common'
 
 const Stack = createNativeStackNavigator()
-
-type Config = {
-  name: keyof ReactNativeComponentsStackParamList
-  component: ComponentType<any>
-}
-
-const CONFIGS: Config[] = [
-  {
-    name: 'React Native Components',
-    component: ReactNativeComponentsHomeScreen,
-  },
-  {
-    name: 'ActivityIndicator',
-    component: ActivityIndicatorScreen,
-  },
-]
 
 export const ReactNativeComponentsStack = () => {
   return (
     <Stack.Navigator>
-      {CONFIGS.map(({ name, component }, index) => (
+      {SCREEN_CONFIGS.map(({ name, component }, index) => (
         <Stack.Screen
           key={`${index}_${name}`}
           name={name}
