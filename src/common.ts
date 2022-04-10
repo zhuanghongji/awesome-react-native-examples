@@ -21,4 +21,5 @@ export type ReactNativeSkiaStackParamList = {
   ['react-native-skia']: undefined
   HelloWorld: undefined
   HelloWorldImperativeAPI: undefined
+  Canvas: undefined
 }
