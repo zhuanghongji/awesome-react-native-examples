@@ -9,11 +9,11 @@ import {
 
 const { width: sw } = Dimensions.get('screen')
 
-type ExampleViewProps = PropsWithChildren<{
+type ExamplePlaygroundProps = PropsWithChildren<{
   style?: StyleProp<ViewStyle>
 }>
 
-export const ExampleView = (props: ExampleViewProps) => {
+export const ExamplePlayground = (props: ExamplePlaygroundProps) => {
   const { style, children } = props
   return <View style={[styles.container, style]}>{children}</View>
 }

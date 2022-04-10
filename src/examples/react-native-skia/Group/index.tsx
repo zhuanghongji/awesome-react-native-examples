@@ -8,7 +8,7 @@ import {
   useImage,
   usePaintRef,
 } from '@shopify/react-native-skia'
-import { ExampleScrollView, ExampleView } from '../../../components'
+import { ExamplePlayground, ExampleScrollView } from '../../../components'
 
 const oslo = require('./oslo.jpeg')
 
@@ -97,11 +97,11 @@ export const GroupScreen = () => {
 
   return (
     <ExampleScrollView>
-      <ExampleView>{example1()}</ExampleView>
-      <ExampleView>{example2()}</ExampleView>
-      <ExampleView>{example3()}</ExampleView>
-      <ExampleView>{example4()}</ExampleView>
-      <ExampleView>{example5()}</ExampleView>
+      <ExamplePlayground>{example1()}</ExamplePlayground>
+      <ExamplePlayground>{example2()}</ExamplePlayground>
+      <ExamplePlayground>{example3()}</ExamplePlayground>
+      <ExamplePlayground>{example4()}</ExamplePlayground>
+      <ExamplePlayground>{example5()}</ExamplePlayground>
     </ExampleScrollView>
   )
 }

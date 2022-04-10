@@ -7,7 +7,7 @@ import {
   Paint,
   usePaintRef,
 } from '@shopify/react-native-skia'
-import { ExampleScrollView, ExampleView } from '../../../components'
+import { ExamplePlayground, ExampleScrollView } from '../../../components'
 
 export const PaintScreen = () => {
   const paint = usePaintRef()
@@ -71,10 +71,10 @@ export const PaintScreen = () => {
 
   return (
     <ExampleScrollView>
-      <ExampleView>{example1()}</ExampleView>
-      <ExampleView>{example2()}</ExampleView>
-      <ExampleView>{example3()}</ExampleView>
-      <ExampleView>{example4()}</ExampleView>
+      <ExamplePlayground>{example1()}</ExamplePlayground>
+      <ExamplePlayground>{example2()}</ExamplePlayground>
+      <ExamplePlayground>{example3()}</ExamplePlayground>
+      <ExamplePlayground>{example4()}</ExamplePlayground>
     </ExampleScrollView>
   )
 }
