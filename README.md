@@ -15,7 +15,7 @@ Collect and rewrite React Native libraries examples in one app
 
 <br/>
 
-## Tips 
+## Tips
 
 - Download the apk of `ARNE` app on your Andoird device in `Release`, so you can explore the usage of lib easily. It save your time of navigating lib-repo to download and build the source code.
 - If you want to make this repo as a playground, just clone and run-android or run-ios as what you do before. There is no difference between `ARNE app-screen-structure` app and `src source-code-structure`, so you can position the app screen and souce code easily.
@@ -25,18 +25,21 @@ Collect and rewrite React Native libraries examples in one app
 
 ## Roadmap
 
-- 🕖 [React Native Components](https://reactnative.dev/docs/activityindicator) 
-- 🕖 [React Native APIs](https://reactnative.dev/docs/accessibilityinfo) 
+- 🕖 [React Native Components](https://reactnative.dev/docs/activityindicator)
+- 🕖 [React Native APIs](https://reactnative.dev/docs/accessibilityinfo)
+- ➿
 - 🕖 [react-navigation](https://github.com/react-navigation/react-navigation)
 - 🕖 [react-native-reanimated](https://github.com/software-mansion/react-native-reanimated)
 - 🕖 [react-native-gesture-handler](https://github.com/software-mansion/react-native-gesture-handler)
 - 🕖 [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context)
-- 🕖 [react-native-skia](https://github.com/shopify/react-native-skia)
-- 🕖 [react-native-camera](https://github.com/react-native-camera/react-native-camera)
-- 🕖 [react-native-webview](https://github.com/react-native-webview/react-native-webview)
+- ➿
 - 🕖 [react-native-vision-camera](https://github.com/mrousavy/react-native-vision-camera)
 - 🕖 [react-native-blurhash](https://github.com/mrousavy/react-native-blurhash)
 - 🕖 [react-native-mmkv](https://github.com/mrousavy/react-native-mmkv)
+- ➿
+- 🕖 [react-native-skia](https://github.com/shopify/react-native-skia)
+- 🕖 [react-native-camera](https://github.com/react-native-camera/react-native-camera)
+- 🕖 [react-native-webview](https://github.com/react-native-webview/react-native-webview)
 - 🕖 [react-native-video](https://github.com/react-native-video/react-native-video)
 - 🕖 [react-native-snap-carousel](https://github.com/meliorence/react-native-snap-carousel)
 - 🕖 [react-native-svg](https://github.com/react-native-svg/react-native-svg)
@@ -74,5 +77,6 @@ Collect and rewrite React Native libraries examples in one app
 - 🕖 [react-native-parallax-swiper](https://github.com/zachgibson/react-native-parallax-swiper)
 - 🕖 [react-native-shimmer-placeholder](https://github.com/tomzaku/react-native-shimmer-placeholder)
 - 🕖 [react-native-autolink](https://github.com/joshswan/react-native-autolink)
+- ➿
 - 🕖 [@react-native-community/hooks](https://www.npmjs.com/package/@react-native-community/hooks)
 - 🕖 [lottie-react-native](https://github.com/lottie-react-native/lottie-react-native)

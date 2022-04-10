@@ -7,34 +7,52 @@
  *
  * @format
  */
-import React from 'react'
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  Text,
-  useColorScheme,
-} from 'react-native'
+import React, { ComponentType } from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { RootStackParamList } from './common'
+import { ReactNativeApisStack } from './examples/react-native-apis/stack'
+import { ReactNativeComponentsStack } from './examples/react-native-components/stack'
+import { HomeScreen } from './home'
+
+const Stack = createNativeStackNavigator()
+
+type Config = {
+  name: keyof RootStackParamList
+  component: ComponentType<any>
+}
+
+const CONFIGS: Config[] = [
+  {
+    name: 'Awesome React Native Examples',
+    component: HomeScreen,
+  },
+  {
+    name: 'React Native Apis ',
+    component: ReactNativeApisStack,
+  },
+  {
+    name: 'React Native Components ',
+    component: ReactNativeComponentsStack,
+  },
+]
 
 export const App = () => {
-  const isDarkMode = useColorScheme() === 'dark'
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? 'black' : 'white',
-  }
-
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        backgroundColor={isDarkMode ? 'black' : 'white'}
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}
-      >
-        <Text>Awesome React Native Examples</Text>
-      </ScrollView>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator>
+        {CONFIGS.map(({ name, component }, index) => (
+          <Stack.Screen
+            key={`${index}_${name}`}
+            name={name}
+            component={component}
+            options={{
+              headerShown: name === 'Awesome React Native Examples',
+              animation: 'slide_from_right',
+            }}
+          />
+        ))}
+      </Stack.Navigator>
+    </NavigationContainer>
   )
 }
