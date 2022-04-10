@@ -1,26 +1,18 @@
 import React from 'react'
-import { ActivityIndicator, StyleSheet, View, ViewStyle } from 'react-native'
+import { ActivityIndicator } from 'react-native'
+import { ExampleContainer, ExamplePlayground } from '../../../components'
 
 export const ActivityIndicatorScreen = () => {
   return (
-    <View style={styles.container}>
-      <ActivityIndicator />
-      <ActivityIndicator size="large" />
-      <ActivityIndicator size="small" color="#0000ff" />
-      <ActivityIndicator size="large" color="#00ff00" />
-    </View>
+    <ExampleContainer>
+      <ExamplePlayground
+        style={{ flexDirection: 'row', justifyContent: 'space-around' }}
+      >
+        <ActivityIndicator />
+        <ActivityIndicator size="large" />
+        <ActivityIndicator size="small" color="#0000ff" />
+        <ActivityIndicator size="large" color="#00ff00" />
+      </ExamplePlayground>
+    </ExampleContainer>
   )
 }
-
-type Styles = {
-  container: ViewStyle
-}
-
-const styles = StyleSheet.create<Styles>({
-  container: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-  },
-})

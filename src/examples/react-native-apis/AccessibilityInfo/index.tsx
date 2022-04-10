@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import {
-  AccessibilityInfo,
-  StyleSheet,
-  Text,
-  TextStyle,
-  View,
-  ViewStyle,
-} from 'react-native'
+import { AccessibilityInfo, StyleSheet, Text, TextStyle } from 'react-native'
+import { ExampleContainer } from '../../../components'
 
 export const AccessibilityInfoScreen = () => {
   const [reduceMotionEnabled, setReduceMotionEnabled] = useState(false)
@@ -35,29 +29,25 @@ export const AccessibilityInfoScreen = () => {
   }, [])
 
   return (
-    <View style={styles.container}>
+    <ExampleContainer>
       <Text style={styles.text}>
-        The reduce motion is {reduceMotionEnabled ? 'enabled' : 'disabled'}.
+        The reduce motion is {reduceMotionEnabled ? 'enabled' : 'disabled'}
       </Text>
       <Text style={styles.text}>
-        The screen reader is {screenReaderEnabled ? 'enabled' : 'disabled'}.
+        The screen reader is {screenReaderEnabled ? 'enabled' : 'disabled'}
       </Text>
-    </View>
+    </ExampleContainer>
   )
 }
 
 type Styles = {
-  container: ViewStyle
   text: TextStyle
 }
 
 const styles = StyleSheet.create<Styles>({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   text: {
     color: '#333333',
+    fontSize: 18,
+    lineHeight: 48,
   },
 })

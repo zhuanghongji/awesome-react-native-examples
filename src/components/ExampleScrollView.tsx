@@ -6,6 +6,9 @@ type ExampleScrollViewProps = PropsWithChildren<{
   style?: StyleProp<ViewStyle>
 }>
 
+/**
+ * For wraping ExamplePlayground List in screen
+ */
 export const ExampleScrollView = (props: ExampleScrollViewProps) => {
   const { style, children } = props
   const count = React.Children.count(children)

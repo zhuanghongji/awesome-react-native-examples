@@ -1,11 +1,12 @@
 import React from 'react'
-import { Dimensions, StyleSheet, View, ViewStyle } from 'react-native'
+import { Dimensions } from 'react-native'
 import {
   BlendMode,
   Skia,
   SkiaView,
   useDrawCallback,
 } from '@shopify/react-native-skia'
+import { ExampleContainer, ExamplePlayground } from '../../../components'
 
 const { width: sw } = Dimensions.get('screen')
 
@@ -34,22 +35,10 @@ export const HelloWorldImperativeAPIScreen = () => {
   }, [])
 
   return (
-    <View style={styles.container}>
-      <View style={{ width: sw, height: sw, backgroundColor: 'white' }}>
+    <ExampleContainer>
+      <ExamplePlayground>
         <SkiaView style={{ flex: 1 }} onDraw={onDraw} />
-      </View>
-    </View>
+      </ExamplePlayground>
+    </ExampleContainer>
   )
 }
-
-type Styles = {
-  container: ViewStyle
-}
-
-const styles = StyleSheet.create<Styles>({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-})

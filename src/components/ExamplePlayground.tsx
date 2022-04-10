@@ -13,6 +13,9 @@ type ExamplePlaygroundProps = PropsWithChildren<{
   style?: StyleProp<ViewStyle>
 }>
 
+/**
+ * Provider a white-board view for playing example code
+ */
 export const ExamplePlayground = (props: ExamplePlaygroundProps) => {
   const { style, children } = props
   return <View style={[styles.container, style]}>{children}</View>

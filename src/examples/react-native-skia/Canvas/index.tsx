@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Dimensions, Image, StyleSheet, View, ViewStyle } from 'react-native'
+import { Dimensions, Image } from 'react-native'
 import {
   Canvas,
   Circle,
@@ -7,6 +7,7 @@ import {
   useTouchHandler,
   useValue,
 } from '@shopify/react-native-skia'
+import { ExampleContainer, ExamplePlayground } from '../../../components'
 
 const { width: sw } = Dimensions.get('screen')
 
@@ -38,8 +39,8 @@ export const CanvasScreen = () => {
   })
 
   return (
-    <View style={styles.container}>
-      <View style={{ width: sw, height: sw, backgroundColor: 'white' }}>
+    <ExampleContainer>
+      <ExamplePlayground>
         <Canvas
           ref={ref}
           style={{ flex: 1 }}
@@ -53,7 +54,7 @@ export const CanvasScreen = () => {
           {/* touch canvas area and the cyan circle move */}
           <Circle cx={cx} cy={cy} r={10} color="cyan" />
         </Canvas>
-      </View>
+      </ExamplePlayground>
 
       {snapshotBase64 ? (
         <Image
@@ -63,23 +64,11 @@ export const CanvasScreen = () => {
             left: 0,
             width: 48,
             height: 48,
-            backgroundColor: '#000000',
+            backgroundColor: 'black',
           }}
           source={{ uri: `data:image/png;base64,${snapshotBase64}` }}
         />
       ) : null}
-    </View>
+    </ExampleContainer>
   )
 }
-
-type Styles = {
-  container: ViewStyle
-}
-
-const styles = StyleSheet.create<Styles>({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-})

@@ -6,6 +6,9 @@ type ExampleContainerProps = PropsWithChildren<{
   style?: StyleProp<ViewStyle>
 }>
 
+/**
+ * For wraping ExamplePlayground in screen
+ */
 export const ExampleContainer = (props: ExampleContainerProps) => {
   const { style, children } = props
   return (
