@@ -2,6 +2,7 @@ import React, { ComponentType } from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { ReactNativeSkiaStackParamList } from '../../common'
 import { HelloWorldScreen } from './HelloWorld'
+import { HelloWorldImperativeAPIScreen } from './HelloWorldImperativeAPI'
 import { ReactNativeSkiaHomeScreen } from './home'
 
 const Stack = createNativeStackNavigator()
@@ -19,6 +20,10 @@ const CONFIGS: Config[] = [
   {
     name: 'HelloWorld',
     component: HelloWorldScreen,
+  },
+  {
+    name: 'HelloWorldImperativeAPI',
+    component: HelloWorldImperativeAPIScreen,
   },
 ]
 
