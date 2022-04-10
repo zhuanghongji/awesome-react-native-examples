@@ -2,11 +2,11 @@ import React, { Fragment, PropsWithChildren } from 'react'
 import { ScrollView, StyleProp, StyleSheet, ViewStyle } from 'react-native'
 import { Divider } from './Divider'
 
-type ExampleViewProps = PropsWithChildren<{
+type ExampleScrollViewProps = PropsWithChildren<{
   style?: StyleProp<ViewStyle>
 }>
 
-export const ExampleScrollView = (props: ExampleViewProps) => {
+export const ExampleScrollView = (props: ExampleScrollViewProps) => {
   const { style, children } = props
   const count = React.Children.count(children)
   return (

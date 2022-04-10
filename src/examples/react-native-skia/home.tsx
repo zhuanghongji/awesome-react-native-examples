@@ -19,6 +19,7 @@ const NAMES: RouteName[] = [
   'Canvas',
   'Paint',
   'Group',
+  'FitBox',
 ]
 
 export const ReactNativeSkiaHomeScreen = ({

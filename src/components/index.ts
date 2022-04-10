@@ -1,4 +1,5 @@
 export * from './Button'
 export * from './Divider'
-export * from './ExampleView'
+export * from './ExampleContainer'
 export * from './ExampleScrollView'
+export * from './ExampleView'
