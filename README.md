@@ -25,8 +25,8 @@ Collect and rewrite React Native libraries examples in one app
 
 ## Roadmap
 
-- 🕖 [React Native Components](https://reactnative.dev/docs/activityindicator)
-- 🕖 [React Native APIs](https://reactnative.dev/docs/accessibilityinfo)
+- ⏩ [React Native Components](https://reactnative.dev/docs/activityindicator)
+- ⏩ [React Native APIs](https://reactnative.dev/docs/accessibilityinfo)
 - ➿
 - 🕖 [react-navigation](https://github.com/react-navigation/react-navigation)
 - 🕖 [react-native-reanimated](https://github.com/software-mansion/react-native-reanimated)
@@ -37,7 +37,7 @@ Collect and rewrite React Native libraries examples in one app
 - 🕖 [react-native-blurhash](https://github.com/mrousavy/react-native-blurhash)
 - 🕖 [react-native-mmkv](https://github.com/mrousavy/react-native-mmkv)
 - ➿
-- 🕖 [react-native-skia](https://github.com/shopify/react-native-skia)
+- ⏩ [react-native-skia](https://github.com/shopify/react-native-skia)
 - 🕖 [react-native-camera](https://github.com/react-native-camera/react-native-camera)
 - 🕖 [react-native-webview](https://github.com/react-native-webview/react-native-webview)
 - 🕖 [react-native-video](https://github.com/react-native-video/react-native-video)
@@ -80,3 +80,9 @@ Collect and rewrite React Native libraries examples in one app
 - ➿
 - 🕖 [@react-native-community/hooks](https://www.npmjs.com/package/@react-native-community/hooks)
 - 🕖 [lottie-react-native](https://github.com/lottie-react-native/lottie-react-native)
+
+## TroubleShooting
+
+> **Build failed on Android Studio ?**
+>
+> - Already setup ndk path ?

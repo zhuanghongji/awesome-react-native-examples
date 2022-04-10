@@ -13,6 +13,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { RootStackParamList } from './common'
 import { ReactNativeApisStack } from './examples/react-native-apis/stack'
 import { ReactNativeComponentsStack } from './examples/react-native-components/stack'
+import { ReactNativeSkiaStack } from './examples/react-native-skia/stack'
 import { HomeScreen } from './home'
 
 const Stack = createNativeStackNavigator()
@@ -34,6 +35,10 @@ const CONFIGS: Config[] = [
   {
     name: 'React Native Components ',
     component: ReactNativeComponentsStack,
+  },
+  {
+    name: 'react-native-skia ',
+    component: ReactNativeSkiaStack,
   },
 ]
 

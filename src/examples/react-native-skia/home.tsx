@@ -1,31 +1,24 @@
 import React from 'react'
-import {
-  FlatList,
-  StatusBar,
-  StyleSheet,
-  TextStyle,
-  ViewStyle,
-} from 'react-native'
+import { FlatList, StatusBar, StyleSheet, ViewStyle } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
-import { RootStackParamList } from '../common'
-import { Button } from '../components/Button'
-import { Divider } from '../components/Divider'
+import { ReactNativeSkiaStackParamList } from '../../common'
+import { Button } from '../../components/Button'
+import { Divider } from '../../components/Divider'
 
-export type RouteName = keyof RootStackParamList
+type RouteName = keyof ReactNativeSkiaStackParamList
 
-export type ScreenProps = NativeStackScreenProps<
-  RootStackParamList,
-  'Awesome React Native Examples'
+type ScreenProps = NativeStackScreenProps<
+  ReactNativeSkiaStackParamList,
+  'react-native-skia'
 >
 
-const NAMES: RouteName[] = [
-  'React Native Apis ',
-  'React Native Components ',
-  'react-native-skia ',
-]
+const NAMES: RouteName[] = ['HelloWorld']
 
-export const HomeScreen = ({ navigation, route }: ScreenProps) => {
+export const ReactNativeSkiaHomeScreen = ({
+  navigation,
+  route,
+}: ScreenProps) => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="white" barStyle="dark-content" />
@@ -45,14 +38,10 @@ export const HomeScreen = ({ navigation, route }: ScreenProps) => {
 
 type Styles = {
   container: ViewStyle
-  text: TextStyle
 }
 
 const styles = StyleSheet.create<Styles>({
   container: {
     flex: 1,
-  },
-  text: {
-    color: '#333333',
   },
 })
