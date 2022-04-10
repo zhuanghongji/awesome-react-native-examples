@@ -18,6 +18,7 @@ const NAMES: RouteName[] = [
   'HelloWorldImperativeAPI',
   'Canvas',
   'Paint',
+  'Group',
 ]
 
 export const ReactNativeSkiaHomeScreen = ({

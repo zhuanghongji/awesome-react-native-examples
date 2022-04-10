@@ -2,6 +2,7 @@ import React, { ComponentType } from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { ReactNativeSkiaStackParamList } from '../../common'
 import { CanvasScreen } from './Canvas'
+import { GroupScreen } from './Group'
 import { HelloWorldScreen } from './HelloWorld'
 import { HelloWorldImperativeAPIScreen } from './HelloWorldImperativeAPI'
 import { PaintScreen } from './Paint'
@@ -34,6 +35,10 @@ const CONFIGS: Config[] = [
   {
     name: 'Paint',
     component: PaintScreen,
+  },
+  {
+    name: 'Group',
+    component: GroupScreen,
   },
 ]
 

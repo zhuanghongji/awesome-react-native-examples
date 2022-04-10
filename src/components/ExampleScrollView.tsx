@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from 'react'
+import React, { Fragment, PropsWithChildren } from 'react'
 import { ScrollView, StyleProp, StyleSheet, ViewStyle } from 'react-native'
 import { Divider } from './Divider'
 
@@ -12,11 +12,11 @@ export const ExampleScrollView = (props: ExampleViewProps) => {
   return (
     <ScrollView style={[styles.container, style]}>
       {React.Children.map(children, (child, index) => (
-        <>
+        <Fragment key={index}>
           <Divider />
           {child}
           {index === count - 1 && <Divider />}
-        </>
+        </Fragment>
       ))}
     </ScrollView>
   )

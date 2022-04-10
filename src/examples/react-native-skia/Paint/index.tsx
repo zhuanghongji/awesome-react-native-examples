@@ -1,5 +1,4 @@
 import React from 'react'
-import { StyleSheet, ViewStyle } from 'react-native'
 import {
   Canvas,
   Circle,
@@ -79,13 +78,3 @@ export const PaintScreen = () => {
     </ExampleScrollView>
   )
 }
-
-type Styles = {
-  container: ViewStyle
-}
-
-const styles = StyleSheet.create<Styles>({
-  container: {
-    flex: 1,
-  },
-})
