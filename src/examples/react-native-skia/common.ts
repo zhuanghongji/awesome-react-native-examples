@@ -6,6 +6,7 @@ import { GroupScreen } from './Group'
 import { HelloWorldScreen } from './HelloWorld'
 import { HelloWorldImperativeAPIScreen } from './HelloWorldImperativeAPI'
 import { PaintScreen } from './Paint'
+import { PathScreen } from './Path'
 import { HomeScreen } from './home'
 
 type RouteName = keyof ReactNativeSkiaStackParamList
@@ -43,6 +44,10 @@ export const SCREEN_CONFIGS: ScreenConfig[] = [
   {
     name: 'FitBox',
     component: FitBoxScreen,
+  },
+  {
+    name: 'Path',
+    component: PathScreen,
   },
 ]
 

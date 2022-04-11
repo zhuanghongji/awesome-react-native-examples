@@ -25,4 +25,5 @@ export type ReactNativeSkiaStackParamList = {
   Paint: undefined
   Group: undefined
   FitBox: undefined
+  Path: undefined
 }
