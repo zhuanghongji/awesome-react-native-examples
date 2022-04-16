@@ -15,57 +15,23 @@ import { HomeScreen } from './home'
 type RouteName = keyof ReactNativeSkiaStackParamList
 
 type ScreenConfig = {
-  name: RouteName
-  component: ComponentType<any>
+  [name in RouteName]: ComponentType<any>
 }
 
-export const SCREEN_CONFIGS: ScreenConfig[] = [
-  {
-    name: 'react-native-skia',
-    component: HomeScreen,
-  },
-  {
-    name: 'HelloWorld',
-    component: HelloWorldScreen,
-  },
-  {
-    name: 'HelloWorldImperativeAPI',
-    component: HelloWorldImperativeAPIScreen,
-  },
-  {
-    name: 'Canvas',
-    component: CanvasScreen,
-  },
-  {
-    name: 'Paint',
-    component: PaintScreen,
-  },
-  {
-    name: 'Group',
-    component: GroupScreen,
-  },
-  {
-    name: 'FitBox',
-    component: FitBoxScreen,
-  },
-  {
-    name: 'Path',
-    component: PathScreen,
-  },
-  {
-    name: 'Rect',
-    component: RectScreen,
-  },
-  {
-    name: 'RoundedRect',
-    component: RoundedRectScreen,
-  },
-  {
-    name: 'DiffRect',
-    component: DiffRectScreen,
-  },
-]
+export const SCREEN_CONFIGS: ScreenConfig = {
+  ['react-native-skia']: HomeScreen,
+  HelloWorld: HelloWorldScreen,
+  HelloWorldImperativeAPI: HelloWorldImperativeAPIScreen,
+  Canvas: CanvasScreen,
+  Paint: PaintScreen,
+  Group: GroupScreen,
+  FitBox: FitBoxScreen,
+  Path: PathScreen,
+  Rect: RectScreen,
+  RoundedRect: RoundedRectScreen,
+  DiffRect: DiffRectScreen,
+}
 
-export const ROUTE_NAMES = SCREEN_CONFIGS.map(v => v.name).filter(
-  (_, index) => index > 0
-)
+export const ROUTE_NAMES = <RouteName[]>Object.keys(SCREEN_CONFIGS).filter(
+  v => v !== 'react-native-skia'
+) 
