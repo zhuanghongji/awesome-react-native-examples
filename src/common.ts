@@ -30,4 +30,5 @@ export type ReactNativeSkiaStackParamList = {
   Line: undefined
   Points: undefined
   Circle: undefined
+  Oval: undefined
 }
