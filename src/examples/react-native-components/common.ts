@@ -3,22 +3,17 @@ import { ReactNativeComponentsStackParamList } from '../../common'
 import { ActivityIndicatorScreen } from './ActivityIndicator'
 import { HomeScreen } from './home'
 
+type RouteName = keyof ReactNativeComponentsStackParamList
+
 type ScreenConfig = {
-  name: keyof ReactNativeComponentsStackParamList
-  component: ComponentType<any>
+  [name in RouteName]: ComponentType<any>
 }
 
-export const SCREEN_CONFIGS: ScreenConfig[] = [
-  {
-    name: 'React Native Components',
-    component: HomeScreen,
-  },
-  {
-    name: 'ActivityIndicator',
-    component: ActivityIndicatorScreen,
-  },
-]
+export const SCREEN_CONFIGS: ScreenConfig = {
+  ['React Native Components']: HomeScreen,
+  ActivityIndicator: ActivityIndicatorScreen,
+}
 
-export const ROUTE_NAMES = SCREEN_CONFIGS.map(v => v.name).filter(
-  (_, index) => index > 0
-)
+export const ROUTE_NAMES = <RouteName[]>Object.keys(SCREEN_CONFIGS).filter(
+  v => v !== 'React Native Components'
+) 

@@ -13,7 +13,6 @@ export type ReactNativeApisStackParamList = {
 export type ReactNativeComponentsStackParamList = {
   ['React Native Components']: undefined
   ActivityIndicator: undefined
-  Button: undefined
 }
 
 export type ReactNativeSkiaStackParamList = {
