@@ -13,6 +13,7 @@ import { RoundedRectScreen } from './RoundedRect'
 import { HomeScreen } from './home'
 import { LineScreen } from './Line'
 import { PointsScreen } from './Points'
+import { CircleScreen } from './Circle'
 
 type RouteName = keyof ReactNativeSkiaStackParamList
 
@@ -34,6 +35,7 @@ export const SCREEN_CONFIGS: ScreenConfig = {
   DiffRect: DiffRectScreen,
   Line: LineScreen,
   Points: PointsScreen,
+  Circle: CircleScreen,
 }
 
 export const ROUTE_NAMES = <RouteName[]>Object.keys(SCREEN_CONFIGS).filter(
