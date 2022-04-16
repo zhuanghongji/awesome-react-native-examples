@@ -1,6 +1,7 @@
 import { ComponentType } from 'react'
 import { ReactNativeSkiaStackParamList } from '../../common'
 import { CanvasScreen } from './Canvas'
+import { DiffRectScreen } from './DiffRect'
 import { FitBoxScreen } from './FitBox'
 import { GroupScreen } from './Group'
 import { HelloWorldScreen } from './HelloWorld'
@@ -58,6 +59,10 @@ export const SCREEN_CONFIGS: ScreenConfig[] = [
   {
     name: 'RoundedRect',
     component: RoundedRectScreen,
+  },
+  {
+    name: 'DiffRect',
+    component: DiffRectScreen,
   },
 ]
 
