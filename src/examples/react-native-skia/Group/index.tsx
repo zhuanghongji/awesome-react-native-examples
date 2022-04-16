@@ -10,7 +10,7 @@ import {
 } from '@shopify/react-native-skia'
 import { ExamplePlayground, ExampleScrollView } from '../../../components'
 
-const oslo = require('./oslo.jpeg')
+const oslo = require('../assets/oslo.jpeg')
 
 export const GroupScreen = () => {
   const image = useImage(oslo)
