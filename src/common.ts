@@ -28,4 +28,5 @@ export type ReactNativeSkiaStackParamList = {
   RoundedRect: undefined
   DiffRect: undefined
   Line: undefined
+  Points: undefined
 }
