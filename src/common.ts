@@ -27,4 +27,5 @@ export type ReactNativeSkiaStackParamList = {
   FitBox: undefined
   Path: undefined
   Rect: undefined
+  RoundedRect: undefined
 }

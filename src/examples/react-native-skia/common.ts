@@ -8,6 +8,7 @@ import { HelloWorldImperativeAPIScreen } from './HelloWorldImperativeAPI'
 import { PaintScreen } from './Paint'
 import { PathScreen } from './Path'
 import { RectScreen } from './Rect'
+import { RoundedRectScreen } from './RoundedRect'
 import { HomeScreen } from './home'
 
 type RouteName = keyof ReactNativeSkiaStackParamList
@@ -53,6 +54,10 @@ export const SCREEN_CONFIGS: ScreenConfig[] = [
   {
     name: 'Rect',
     component: RectScreen,
+  },
+  {
+    name: 'RoundedRect',
+    component: RoundedRectScreen,
   },
 ]
 
