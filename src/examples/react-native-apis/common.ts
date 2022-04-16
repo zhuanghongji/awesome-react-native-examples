@@ -3,22 +3,18 @@ import { ReactNativeApisStackParamList } from '../../common'
 import { AccessibilityInfoScreen } from './AccessibilityInfo'
 import { HomeScreen } from './home'
 
+type RouteName = keyof ReactNativeApisStackParamList
+
 type ScreenConfig = {
-  name: keyof ReactNativeApisStackParamList
-  component: ComponentType<any>
+  [name in RouteName]: ComponentType<any>
 }
 
-export const SCREEN_CONFIGS: ScreenConfig[] = [
-  {
-    name: 'React Native Apis',
-    component: HomeScreen,
-  },
-  {
-    name: 'AccessibilityInfo',
-    component: AccessibilityInfoScreen,
-  },
-]
+export const SCREEN_CONFIGS: ScreenConfig = {
+  ['React Native Apis']: HomeScreen,
+  AccessibilityInfo: AccessibilityInfoScreen,
+}
 
-export const ROUTE_NAMES = SCREEN_CONFIGS.map(v => v.name).filter(
-  (_, index) => index > 0
-)
+export const ROUTE_NAMES = <RouteName[]>Object.keys(SCREEN_CONFIGS).filter(
+  v => v !== 'React Native Apis'
+) 
+

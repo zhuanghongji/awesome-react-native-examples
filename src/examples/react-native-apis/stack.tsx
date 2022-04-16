@@ -7,14 +7,17 @@ const Stack = createNativeStackNavigator()
 export const ReactNativeApisStack = () => {
   return (
     <Stack.Navigator>
-      {SCREEN_CONFIGS.map(({ name, component }, index) => (
-        <Stack.Screen
-          key={`${index}_${name}`}
-          name={name}
-          component={component}
-          options={{ animation: 'slide_from_right' }}
-        />
-      ))}
+      {Object.keys(SCREEN_CONFIGS).map((name, index) => {
+        const component = SCREEN_CONFIGS[name]
+        return (
+          <Stack.Screen
+            key={`${index}_${name}`}
+            name={name}
+            component={component}
+            options={{ animation: 'slide_from_right' }}
+          />
+        )
+      })}
     </Stack.Navigator>
   )
 }

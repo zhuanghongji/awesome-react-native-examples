@@ -8,7 +8,6 @@ export type RootStackParamList = {
 export type ReactNativeApisStackParamList = {
   ['React Native Apis']: undefined
   AccessibilityInfo: undefined
-  Alert: undefined
 }
 
 export type ReactNativeComponentsStackParamList = {
