@@ -35,4 +35,5 @@ export type ReactNativeSkiaStackParamList = {
   VerticesUsingIndices: undefined
   Patch: undefined
   Box: undefined
+  Image: undefined
 }

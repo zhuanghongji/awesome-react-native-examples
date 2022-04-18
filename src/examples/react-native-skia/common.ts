@@ -19,6 +19,7 @@ import { VerticesScreen } from './Vertices'
 import { VerticesUsingIndicesScreen } from './VerticesUsingIndices'
 import { PatchScreen } from './Patch'
 import { BoxScreen } from './Box'
+import { ImageScreen } from './Image'
 
 type RouteName = keyof ReactNativeSkiaStackParamList
 
@@ -46,6 +47,7 @@ export const SCREEN_CONFIGS: ScreenConfig = {
   VerticesUsingIndices: VerticesUsingIndicesScreen,
   Patch: PatchScreen,
   Box: BoxScreen,
+  Image: ImageScreen,
 }
 
 export const ROUTE_NAMES = <RouteName[]>Object.keys(SCREEN_CONFIGS).filter(
