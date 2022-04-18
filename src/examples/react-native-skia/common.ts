@@ -28,6 +28,7 @@ import { TextPathScreen } from './TextPath'
 import { TextBlobScreen } from './TextBlob'
 import { ShaderScreen } from './Shader'
 import { ShaderUsingUniformsScreen } from './ShaderUsingUniforms'
+import { NestedShadersScreen } from './NestedShaders'
 
 type RouteName = keyof ReactNativeSkiaStackParamList
 
@@ -64,6 +65,7 @@ export const SCREEN_CONFIGS: ScreenConfig = {
   TextBlob: TextBlobScreen,
   Shader: ShaderScreen,
   ShaderUsingUniforms: ShaderUsingUniformsScreen,
+  NestedShaders: NestedShadersScreen,
 }
 
 export const ROUTE_NAMES = <RouteName[]>Object.keys(SCREEN_CONFIGS).filter(
