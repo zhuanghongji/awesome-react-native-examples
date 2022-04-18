@@ -27,6 +27,7 @@ import { GlyphsScreen } from './Glyphs'
 import { TextPathScreen } from './TextPath'
 import { TextBlobScreen } from './TextBlob'
 import { ShaderScreen } from './Shader'
+import { ShaderUsingUniformsScreen } from './ShaderUsingUniforms'
 
 type RouteName = keyof ReactNativeSkiaStackParamList
 
@@ -62,6 +63,7 @@ export const SCREEN_CONFIGS: ScreenConfig = {
   TextPath: TextPathScreen,
   TextBlob: TextBlobScreen,
   Shader: ShaderScreen,
+  ShaderUsingUniforms: ShaderUsingUniformsScreen,
 }
 
 export const ROUTE_NAMES = <RouteName[]>Object.keys(SCREEN_CONFIGS).filter(

@@ -7,7 +7,7 @@ vec4 main(vec2 pos) {
   // normalized x,y values go from 0 to 1, the canvas is 256x256
   vec2 normalized = pos/vec2(256);
   return vec4(normalized.x, normalized.y, 0.5, 1);
-}`)
+}`)!
 
 export const ShaderScreen = () => {
   return (
