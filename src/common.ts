@@ -40,4 +40,5 @@ export type ReactNativeSkiaStackParamList = {
   ImageSVGMakeFromString: undefined
   Text: undefined
   Glyphs: undefined
+  TextPath: undefined
 }
