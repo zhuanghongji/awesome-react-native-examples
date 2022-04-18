@@ -162,6 +162,14 @@ android {
         }
     }
 
+    // https://github.com/Shopify/react-native-skia/pull/388
+    packagingOptions {
+        pickFirst "lib/**/libfbjni.so"
+        pickFirst "lib/**/libjsi.so"
+        pickFirst "lib/**/libreact_nativemodule_core.so"
+        pickFirst "lib/**/libturbomodulejsijni.so"
+    }
+
     if (isNewArchitectureEnabled()) {
         // We configure the NDK build only if you decide to opt-in for the New Architecture.
         externalNativeBuild {
