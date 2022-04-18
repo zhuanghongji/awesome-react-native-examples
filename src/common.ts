@@ -42,4 +42,5 @@ export type ReactNativeSkiaStackParamList = {
   Glyphs: undefined
   TextPath: undefined
   TextBlob: undefined
+  Shader: undefined
 }
