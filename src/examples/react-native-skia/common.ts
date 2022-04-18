@@ -25,6 +25,7 @@ import { ImageSVGMakeFromStringScreen } from './ImageSVGMakeFromString'
 import { TextScreen } from './Text'
 import { GlyphsScreen } from './Glyphs'
 import { TextPathScreen } from './TextPath'
+import { TextBlobScreen } from './TextBlob'
 
 type RouteName = keyof ReactNativeSkiaStackParamList
 
@@ -58,6 +59,7 @@ export const SCREEN_CONFIGS: ScreenConfig = {
   Text: TextScreen,
   Glyphs: GlyphsScreen,
   TextPath: TextPathScreen,
+  TextBlob: TextBlobScreen,
 }
 
 export const ROUTE_NAMES = <RouteName[]>Object.keys(SCREEN_CONFIGS).filter(
