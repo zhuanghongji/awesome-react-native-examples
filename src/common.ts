@@ -36,4 +36,5 @@ export type ReactNativeSkiaStackParamList = {
   Patch: undefined
   Box: undefined
   Image: undefined
+  ImageSVG: undefined
 }
